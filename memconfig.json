@@ -1,0 +1,52 @@
+{
+    "config": {},
+    "dependencies": {
+        "sys_http": "sys-http:"
+    },
+    "schema": {
+        "types": [
+            {
+                "name": "Root",
+                "fields": [
+                    {
+                        "name": "resource",
+                        "type": "Resource",
+                        "params": [
+                            {
+                                "name": "url",
+                                "type": "String"
+                            },
+                            {
+                                "name": "method",
+                                "type": "String"
+                            },
+                            {
+                                "name": "headers",
+                                "type": "String"
+                            },
+                            {
+                                "name": "body",
+                                "type": "String"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Resource",
+                "fields": [
+                    {
+                        "name": "body",
+                        "type": "String",
+                        "params": []
+                    },
+                    {
+                        "name": "headers",
+                        "type": "String",
+                        "params": []
+                    }
+                ]
+            }
+        ]
+    }
+}
